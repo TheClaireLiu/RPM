@@ -30,4 +30,5 @@ const useFetchData = (opts:FetchDataProp) => {
   return {data,loading,err}
 }
 
+
 export default useFetchData;
