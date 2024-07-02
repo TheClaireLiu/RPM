@@ -13,7 +13,6 @@ export async function POST(req: Request) {
     if (!JWT_SECRET) {
       throw new Error("JWT_SECRET is not defined");
     }
-
     const { token, password } = await req.json();
 
     if (!token || !password) {
