@@ -11,3 +11,5 @@ export const decodeToken = (request: NextRequest) => {
   const decoded = jwt.verify(authToken, tokenSecret) as { userId: string };
   return decoded;
 };
+
+

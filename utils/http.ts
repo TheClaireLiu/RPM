@@ -37,3 +37,4 @@ export const sendResponse = (params: SendResponseProps) => {
   const {response, status} = params;
   return NextResponse.json(response, {status});
 }
+
