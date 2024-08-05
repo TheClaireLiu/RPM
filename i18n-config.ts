@@ -6,3 +6,5 @@ export const i18n = {
 } as const;
 
 export type Local = (typeof i18n)["locales"][number];
+
+
