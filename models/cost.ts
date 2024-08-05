@@ -18,3 +18,4 @@ const Cost =
   mongoose.models.costs || mongoose.model("costs", costSchema);
 
 export default Cost;
+

@@ -25,3 +25,4 @@ const Tenant =
   mongoose.models.tenants || mongoose.model("tenants", tenantSchema);
 
 export default Tenant;
+

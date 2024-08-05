@@ -20,6 +20,7 @@ const rentSchema = new mongoose.Schema({
   mt:Date
 });
 
+
 const Tenant =
   mongoose.models.rents || mongoose.model("rents", rentSchema);
 
