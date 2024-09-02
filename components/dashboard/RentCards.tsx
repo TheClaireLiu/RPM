@@ -10,7 +10,7 @@ import useAppStore from "@/stores/appStore";
 interface RentCardsProps {
   propertyId?: string;
 }
-
+// test
 export default function RentCards({ propertyId }: RentCardsProps) {
 
   const {t} = useAppStore();
