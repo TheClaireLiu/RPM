@@ -11,7 +11,6 @@ interface RentCardsProps {
   propertyId?: string;
 }
 //export RentCards
-
 export default function RentCards({ propertyId }: RentCardsProps) {
 
   const {t} = useAppStore();
