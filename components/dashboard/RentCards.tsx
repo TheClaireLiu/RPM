@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import LoadingSection from "../common/LoadingSection";
-import { fetchData } from "@/utils/http";
+// import { fetchData } from "@/utils/http";
 import Input from "@/components/common/Input";
 import usePropertyStore from "@/stores/propertyStore";
 import useAppStore from "@/stores/appStore";
@@ -11,7 +11,6 @@ interface RentCardsProps {
   propertyId?: string;
 }
 //export RentCards
-
 export default function RentCards({ propertyId }: RentCardsProps) {
 
   const {t} = useAppStore();
