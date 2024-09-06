@@ -13,8 +13,6 @@ interface TenantListProps {
 export default function TenantList({ loading, tenants, onEditClick,setCurrentTenant }:TenantListProps) {
   const {t} = useAppStore();
 
-  
-
   return (
     <LoadingSection loading={loading}>
       <section className="card-container">
