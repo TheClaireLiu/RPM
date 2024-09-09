@@ -11,6 +11,7 @@ import FormBackdrop from "@/components/common/form/FormBackdrop";
 import FormTitle from "@/components/common/form/FormTitle";
 import useAppStore from "@/stores/appStore";
 
+
 const RENT_FIELDS = [
   { placeholder: "Amount", name: "amount", inputType: "number" },
   { placeholder: "Date", name: "startDate", inputType: "date" },
