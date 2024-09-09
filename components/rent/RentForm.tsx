@@ -16,6 +16,7 @@ const RENT_FIELDS = [
   { placeholder: "Date", name: "startDate", inputType: "date" },
 ];
 
+
 export default function RentForm() {
   const {t} = useAppStore();
   const { curRent, setCurRent, curTenant, handleRentSubmit, setShowRentForm } = usePropertyStore();
