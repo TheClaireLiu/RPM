@@ -1,7 +1,7 @@
 "use client";
-import { fetchData } from "@/utils/http";
-import { useEffect, useState } from "react";
-import { showToast } from "@/components/common/Toast";
+// import { fetchData } from "@/utils/http";
+// import { useEffect, useState } from "react";
+// import { showToast } from "@/components/common/Toast";
 import { RENT_STATUS_ARRAY } from "@/types/rent";
 import usePropertyStore from "@/stores/propertyStore";
 import Button from "@/components/common/Button";
@@ -10,7 +10,6 @@ import SelectGroup from "@/components/common/SelectGroup";
 import FormBackdrop from "@/components/common/form/FormBackdrop";
 import FormTitle from "@/components/common/form/FormTitle";
 import useAppStore from "@/stores/appStore";
-
 
 const RENT_FIELDS = [
   { placeholder: "Amount", name: "amount", inputType: "number" },
