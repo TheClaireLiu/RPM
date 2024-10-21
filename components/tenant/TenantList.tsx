@@ -16,6 +16,7 @@ export default function TenantList({ loading, tenants, onEditClick,setCurrentTen
 
 
 
+
   return (
     <LoadingSection loading={loading}>
       <section className="card-container">
