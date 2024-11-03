@@ -14,6 +14,8 @@ export default function TenantList({ loading, tenants, onEditClick,setCurrentTen
 
   const {t} = useAppStore();
 
+
+
   return (
     <LoadingSection loading={loading}>
       <section className="card-container">
