@@ -1,0 +1,207 @@
+html,body,*{
+  font-family: 'Quicksand', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+  input {
+    @apply text-black;
+  }
+  .card {
+    @apply bg-gray-800;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #ffffff;
+}
+
+/*Home page style*/
+.hero-container {
+  background-color: #d094ea;
+  padding: 100px;
+ 
+}
+.home-page-title {
+  color:white;
+  width: 400px;
+  font-size: 3rem;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+.home-page-subtitle {
+  color: white;
+  width: 350px;
+  font-size: 1rem;
+}
+
+.video-container {
+  background-color: rgb(91, 209, 215);
+  padding: 100px;
+  text-align: center;
+}
+.video-container-title {
+  color: #804ac4;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 41px;
+  margin-bottom: 20px;
+} 
+.video-container-subtitle {
+  color: #804ac4;
+  width: 350px;
+  font-size: 1rem;
+  margin: auto;
+} 
+
+.product-analytics-container {
+  display: flex;
+  padding: 10px;
+}
+.product-analytics-container-title {
+  color: #804ac4;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 41px;
+  margin-bottom: 20px;
+}
+.product-analytics-container-subtitle {
+  margin-bottom: 20px;
+}
+.product-analytics-feature {
+  padding: 10px;
+
+}
+.product-analytics-feature-title {
+  color: #804ac4;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 41px;
+  margin-bottom: 10px;
+}
+.product-analytics-feature-subtitle {
+
+}
+
+/*end of Home page style*/
+
+@layer utilities {
+  .text-balance {
+    /*text-wrap: balance;*/
+    text-align: justify;
+  }
+}
+
+.link {
+  @apply text-red-500;
+}
+
+.form {
+  @apply w-full sm:w-3/4 md:w-1/2 lg:w-3/4 flex flex-col gap-5 p-2 shadow-lg bg-white rounded;
+}
+
+.input {
+  @apply block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:text-sm sm:leading-6;
+}
+
+.select-options-container {
+  @apply flex gap-2 flex-wrap;
+}
+
+.select-option {
+  @apply cursor-pointer p-2 duration-300 rounded-lg border-2 hover:bg-gray-200;
+}
+
+.select-option.active {
+  @apply bg-gray-200;
+}
+
+.button {
+  @apply px-2 py-1 text-center rounded bg-gray-600 text-white cursor-pointer transition hover:bg-gray-700;
+}
+
+.button.primary {
+  @apply bg-sky-600 hover:bg-sky-700;
+}
+
+.button.danger {
+  @apply bg-red-600 hover:bg-red-700;
+}
+
+.auth-form {
+  @apply gap-6 p-6 shadow m-auto w-full sm:w-96 flex flex-col justify-center text-center;
+}
+
+.form-container {
+  @apply w-full sm:w-96 flex flex-col gap-5 p-4 shadow-lg bg-white rounded;
+}
+
+.sidebar-menu {
+  @apply block p-2 rounded mt-5 duration-300 hover:bg-gray-400 hover:text-white;
+}
+.sidebar-menu.active {
+  @apply bg-gray-400 text-white;
+}
+
+.page-title {
+  @apply text-balance font-bold text-2xl mb-4 block;
+}
+
+.card-container {
+  @apply mt-3 grid gap-5;
+}
+
+.card {
+  @apply rounded relative shadow p-2 transition hover:shadow-lg;
+}
+
+.property-name {
+  @apply text-lg font-bold;
+}
+
+.room-name {
+  @apply text-lg font-semibold;
+}
+
+.tenant-name {
+  @apply text-lg font-semibold cursor-pointer;
+}
+
+.tenant-date {
+  @apply p-1 rounded bg-gray-200 text-gray-800;
+}
+
+.rent-price {
+  @apply text-3xl font-bold;
+}
+
+.rent-date {
+  @apply text-sm text-gray-500;
+}
+
+.rent-status {
+  @apply capitalize border px-1 rounded-lg;
+}
+
+.rent-status.pending {
+  @apply bg-yellow-300 text-yellow-800;
+}
+
+.rent-status.paid {
+  @apply text-green-600 bg-green-100;
+}

@@ -1,0 +1,7 @@
+{
+  "home":{
+    "login":"Login",
+    "signup": "Signup",
+    "Dashboard": "Dashboard"
+  }
+}

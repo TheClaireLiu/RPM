@@ -1,0 +1,46 @@
+{
+  "name": "rental-management-platform",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@formatjs/intl-localematcher": "^0.5.4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/swagger-ui-react": "^4.18.3",
+    "appwrite": "^15.0.0",
+    "bcryptjs": "^2.4.3",
+    "httpsms": "^0.0.4",
+    "jsonwebtoken": "^9.0.2",
+    "mapbox-gl": "^3.6.0",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.7.3",
+    "negotiator": "^0.6.3",
+    "next": "^14.2.16",
+    "next-swagger-doc": "^0.4.0",
+    "postmark": "^4.0.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-map-gl": "^7.1.7",
+    "react-toastify": "^10.0.5",
+    "resend": "^4.0.0",
+    "swagger-ui-react": "^5.17.14",
+    "zustand": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/negotiator": "^0.6.3",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5"
+  }
+}
